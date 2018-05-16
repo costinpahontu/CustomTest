@@ -19,6 +19,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     public Customer addNew(Customer customer) {
 
+
         //check if email is unique
         Long foundCustomerWithEmail = customerRepo.findByEmail(customer.getEmail());
 
